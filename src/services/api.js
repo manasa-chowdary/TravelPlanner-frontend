@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
+  baseURL: 'https://travelplanner-backend-3.onrender.com',
 });
 
 export const signupUser = (data) => API.post('/auth/signup', data);
